@@ -32,7 +32,8 @@ class _SignupPageState extends State<SignupPage> {
           children: [
             Text(
               "Register",
-              style: GoogleFonts.sourceSans3(
+              style: TextStyle(
+                fontFamily: 'SourceSansPro',
                 fontSize: 44,
                 fontWeight: FontWeight.w600,
               ),

@@ -3,8 +3,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:signup_page/screens/otpInput.dart';
 
 class OTPVerify extends StatelessWidget {
+  final TextEditingController digit1 = new TextEditingController();
+  final TextEditingController digit2 = new TextEditingController();
+  final TextEditingController digit3 = new TextEditingController();
+  final TextEditingController digit4 = new TextEditingController();
+
   final String phoneNumber;
-  const OTPVerify({super.key, required this.phoneNumber});
+  OTPVerify({super.key, required this.phoneNumber});
 
   @override
   Widget build(BuildContext context) {
@@ -83,27 +88,100 @@ class OTPVerify extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  height: 2,
-                  width: 65,
-                  color: Color(0xffC8C8C8),
+                  width: 80.0,
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    keyboardType: TextInputType.number,
+                    style: TextStyle(color: Colors.black),
+                    cursorColor: Colors.black,
+                    controller: digit1,
+                    maxLength: 1, // Limit input to one character
+                    decoration: InputDecoration(
+                      counterText: '', // Hide character counter
+                      border: UnderlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                          width: 2.0, // Set the desired underline border width
+                        ),
+                      ),
+                      fillColor: Colors.transparent,
+                      contentPadding: EdgeInsets.all(16.0), // Add left padding
+                    ),
+                  ),
                 ),
                 Container(
-                  height: 2,
-                  width: 65,
-                  color: Color(0xffC8C8C8),
+                  width: 70.0,
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    keyboardType: TextInputType.number,
+                    style: TextStyle(color: Colors.black),
+                    cursorColor: Colors.black,
+                    controller: digit2,
+                    maxLength: 1, // Limit input to one character
+                    decoration: InputDecoration(
+                      counterText: '', // Hide character counter
+                      border: UnderlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                          width: 2.0, // Set the desired underline border width
+                        ),
+                      ),
+                      fillColor: Colors.transparent,
+                      contentPadding: EdgeInsets.all(16.0), // Add left padding
+                    ),
+                  ),
                 ),
                 Container(
-                  height: 2,
-                  width: 65,
-                  color: Color(0xffC8C8C8),
+                  width: 70.0,
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    keyboardType: TextInputType.number,
+                    style: TextStyle(color: Colors.black),
+                    cursorColor: Colors.black,
+                    controller: digit3,
+                    maxLength: 1, // Limit input to one character
+                    decoration: InputDecoration(
+                      counterText: '', // Hide character counter
+                      border: UnderlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                          width: 2.0, // Set the desired underline border width
+                        ),
+                      ),
+                      fillColor: Colors.transparent,
+                      contentPadding: EdgeInsets.all(16.0), // Add left padding
+                    ),
+                  ),
                 ),
                 Container(
-                  height: 2,
-                  width: 65,
-                  color: Color(0xffC8C8C8),
+                  width: 70.0,
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    keyboardType: TextInputType.number,
+                    style: TextStyle(color: Colors.black),
+                    cursorColor: Colors.black,
+                    controller: digit4,
+                    maxLength: 1, // Limit input to one character
+                    decoration: InputDecoration(
+                      counterText: '', // Hide character counter
+                      border: UnderlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                          width: 2.0, // Set the desired underline border width
+                        ),
+                      ),
+                      fillColor: Colors.transparent,
+                      contentPadding: EdgeInsets.all(16.0), // Add left padding
+                    ),
+                  ),
                 ),
               ],
             ),
+
             SizedBox(
               height: 10,
             ),

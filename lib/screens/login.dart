@@ -29,7 +29,8 @@ class _LoginPageState extends State<LoginPage> {
           children: [
             Text(
               "Log In",
-              style: GoogleFonts.sourceSans3(
+              style: TextStyle(
+                fontFamily: 'SourceSansPro',
                 fontSize: 44,
                 fontWeight: FontWeight.w600,
               ),
@@ -95,14 +96,14 @@ class _LoginPageState extends State<LoginPage> {
                   controller: _email,
                   text: "Enter Email Address",
                   isPass: false,
-                  isNumber: false, 
+                  isNumber: false,
                 ),
                 SizedBox(height: 15),
                 InputBox(
                   controller: _password,
                   text: "Password",
                   isPass: true,
-                  isNumber: false, 
+                  isNumber: false,
                 ),
                 SizedBox(height: 15),
                 //----------------Forget------------------------

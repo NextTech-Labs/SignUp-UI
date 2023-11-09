@@ -27,7 +27,8 @@ class _PhoneVerificationState extends State<PhoneVerification> {
           children: [
             Text(
               "Register",
-              style: GoogleFonts.sourceSans3(
+              style: TextStyle(
+                fontFamily: 'SourceSansPro',
                 fontSize: 44,
                 fontWeight: FontWeight.w600,
               ),
@@ -154,7 +155,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
                   controller: _phoneNumber,
                   text: "",
                   isPass: false,
-                  isNumber: true, 
+                  isNumber: true,
                 ),
               ]),
             ),
